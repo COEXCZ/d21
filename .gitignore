@@ -52,3 +52,4 @@ coverage.xml
 docs/_build/
 
 settings_local.py
+d21/db.sqlite3

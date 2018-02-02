@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from d21.election.views import ElectionListView, ElectionDetailView
 
 urlpatterns = [
+    path('', ElectionListView.as_view(), name='election_list'),
+    path('', ElectionDetailView.as_view(), name='election_detail'),
     path('admin/', admin.site.urls),
 ]
