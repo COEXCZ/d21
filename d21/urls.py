@@ -19,6 +19,6 @@ from d21.election.views import ElectionListView, ElectionDetailView
 
 urlpatterns = [
     path('', ElectionListView.as_view(), name='election_list'),
-    path('', ElectionDetailView.as_view(), name='election_detail'),
+    path('', ElectionDetailView.as_view(), name='election_detail'),  # TODO
     path('admin/', admin.site.urls),
 ]
